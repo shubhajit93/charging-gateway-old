@@ -1,0 +1,57 @@
+# Changelog
+All notable changes to this project will be documented in this file.
+
+## [1.4] - 2018-05-06
+### Added
+- Added configurable transaction log generator for all MSISDNs.
+- Added remaining balance check into update wallet query.
+- Added properties LOG_FOR_ANY_MSISDN and LOG_FILE_CREATION_INTERVAL under Log Configuration section.
+
+### Changed
+
+### Deprecated
+
+### Removed
+
+### Fixed
+
+### Security
+
+## [1.3] - 2018-03-29
+### Added
+- Introducing call type id checker class [CallTypeChecker].
+- Adding MySQL-Redis sync application configuration.
+- Adding toString method to all configuration classes.
+- Introducing CallType model class to facilitate CallTypeChecker.
+- Adding configurable Redis functionality to query about subscriberservices and wallet information.
+- Adding reloading feature for calltype table.
+- Adding log monitoring server.
+
+### Changed
+- Number parsing exception block in PipeLineParser
+- Adding redis key for subscriberservices and wallet tables.
+- Adding default values to some configuration properties.
+- Instead of dumping whole trace, we simply dumping reason with additional info to identify 
+  why this error occurs.
+
+### Deprecated
+
+
+### Removed
+- Removed configuration properties which are being hardly changed from cgw.ini.
+
+### Fixed
+- Dynamically setted BillingResponse enum's alpha-numeric value is not thread safe. So raw result code
+  is being used.
+
+### Security
+
+
+
+## [1.2] - 2018-03-01
+
+
+## [1.1] - 2018-01-24
+
+
+## [1.0] - 2017-12-12

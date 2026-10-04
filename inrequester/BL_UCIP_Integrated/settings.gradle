@@ -1,0 +1,6 @@
+rootProject.name = 'BanglaLink IN Requester'
+
+include "CGWCommonInterface"
+
+include ":CGWCommonInterface"
+project(":CGWCommonInterface").projectDir = file("../../CGWCommonInterface")

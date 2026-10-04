@@ -1,0 +1,4 @@
+83011000_16231>>arena>>10005>>SDP>>83011000>>ssd_Daily_subscription_Club21_16231>>123
+83010000_16231>>arena>>10005>>SDP>>83010000>>ssd_Daily_renewal_Club21_16231>>123
+83010001_16231>>arena>>10005>>SDP>>83010001>>ssd_Daily__renewal_Video_Motion_16231>>123
+83015000_16231>>arena>>10005>>SDP>>83015000>>ssd_Per_Wallpaper__16231>>123

@@ -1,0 +1,87 @@
+apply plugin: 'java'
+apply plugin: 'eclipse'
+apply plugin: 'groovy'
+apply plugin: 'application'
+
+archivesBaseName = 'in-requester'
+version = '1.0'
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+// Define the main class for the application
+mainClassName = 'com.ssdtech.Server_Threaded'
+
+sourceSets {
+    main {
+        java {
+            srcDirs = ['src']
+        }
+    }
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile project(':CGWCommonInterface')
+	// reload4j: drop-in replacement for EOL log4j 1.2.x with known CVEs patched
+	compile 'ch.qos.reload4j:reload4j:1.2.26'
+	compile files('../../LocalRepository/Ericsson/ClientServerData.jar',
+	              '../../LocalRepository/Ericsson/CommonGui.jar',
+				  '../../LocalRepository/Ericsson/DccApi.jar',
+				  '../../LocalRepository/Ericsson/DccTestClient.jar',
+				  '../../LocalRepository/Ericsson/demo.src.jar',
+				  '../../LocalRepository/Ericsson/diameter.jar',
+				  '../../LocalRepository/Ericsson/DiameterBaseApi.jar',
+				  '../../LocalRepository/Ericsson/HighLevelApi.jar',
+				  '../../LocalRepository/Ericsson/SCAPv2Api.jar',
+				  '../../LocalRepository/Ericsson/SCAPv2TestServer.jar',
+				  '../../LocalRepository/Ericsson/Utils.jar'
+	)
+}
+
+jar {
+    manifest {
+        attributes("Implementation-Title": "BanglaLink IN Requester",
+                   "Implementation-Version": version)
+    }
+}
+
+task preprocess() {
+    doFirst {
+        println 'Create dist directory and copy all under ConfigurationFiles directory'
+        File applicationProperties = new File('./Application.properties')
+        File dmConfig = new File('./Dmconfig.txt')
+        File numberSeries = new File('./numberseries.txt')
+        File rateConfig = new File('./rateConfig.txt')
+
+        File dstApplicationProperties = new File('./src/dist/bin/Application.properties')
+        File dstDmConfig = new File('./src/dist/bin/Dmconfig.txt')
+        File dstNumberSeries = new File('./src/dist/bin/numberseries.txt')
+        File dstRateConfig = new File('./src/dist/bin/rateConfig.txt')
+
+        GFileUtils.copyFile(applicationProperties, dstApplicationProperties)
+        GFileUtils.copyFile(dmConfig, dstDmConfig)
+        GFileUtils.copyFile(numberSeries, dstNumberSeries)
+        GFileUtils.copyFile(rateConfig, dstRateConfig)
+    }
+}
+
+task postprocess() {
+    doFirst {
+        File dstDir = new File('./src/dist/')
+        dstDir.deleteDir()
+    }
+}
+
+task buildin()  {
+    dependsOn preprocess
+    dependsOn build
+    dependsOn postprocess
+
+    preprocess.finalizedBy build
+    postprocess.mustRunAfter build
+
+    println 'Building BanglaLink IN Requester'
+}

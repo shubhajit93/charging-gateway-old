@@ -1,0 +1,44 @@
+apply plugin: 'java'
+apply plugin: 'eclipse'
+
+archivesBaseName = 'in-requester-bl'
+version = '1.0'
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+sourceSets {
+    main {
+        java {
+            srcDirs = ['src']
+        }
+    }
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile project(':CGWCommonInterface')
+	// reload4j: drop-in replacement for EOL log4j 1.2.x with known CVEs patched
+	compile 'ch.qos.reload4j:reload4j:1.2.26'
+	compile files('../../LocalRepository/Ericsson/ClientServerData.jar',
+	              '../../LocalRepository/Ericsson/CommonGui.jar',
+				  '../../LocalRepository/Ericsson/DccApi.jar',
+				  '../../LocalRepository/Ericsson/DccTestClient.jar',
+				  '../../LocalRepository/Ericsson/demo.src.jar',
+				  '../../LocalRepository/Ericsson/diameter.jar',
+				  '../../LocalRepository/Ericsson/DiameterBaseApi.jar',
+				  '../../LocalRepository/Ericsson/HighLevelApi.jar',
+				  '../../LocalRepository/Ericsson/SCAPv2Api.jar',
+				  '../../LocalRepository/Ericsson/SCAPv2TestServer.jar',
+				  '../../LocalRepository/Ericsson/Utils.jar'
+	)
+}
+
+jar {
+    manifest {
+        attributes("Implementation-Title": "BanglaLink IN Requester",
+                   "Implementation-Version": version)
+    }
+}

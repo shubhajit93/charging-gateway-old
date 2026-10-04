@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="GradleMigrationSettings" migrationVersion="1" />
+  <component name="GradleSettings">
+    <option name="linkedExternalProjectsSettings">
+      <GradleProjectSettings>
+        <option name="externalProjectPath" value="$PROJECT_DIR$/CGWCommonInterface" />
+        <option name="gradleJvm" value="#JAVA_HOME" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/CGWCommonInterface" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+      <GradleProjectSettings>
+        <option name="externalProjectPath" value="$PROJECT_DIR$/inrequester/AIR_DummyV2.0" />
+        <option name="gradleJvm" value="#JAVA_HOME" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/CGWCommonInterface" />
+            <option value="$PROJECT_DIR$/inrequester/AIR_DummyV2.0" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+      <GradleProjectSettings>
+        <option name="externalProjectPath" value="$PROJECT_DIR$/inrequester/AIR_Dummy_Integrated" />
+        <option name="gradleJvm" value="#JAVA_HOME" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/CGWCommonInterface" />
+            <option value="$PROJECT_DIR$/inrequester/AIR_Dummy_Integrated" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+      <GradleProjectSettings>
+        <option name="externalProjectPath" value="$PROJECT_DIR$/inrequester/BL_UCIP_Integrated" />
+        <option name="gradleJvm" value="#JAVA_HOME" />
+      </GradleProjectSettings>
+      <GradleProjectSettings>
+        <option name="externalProjectPath" value="$PROJECT_DIR$/inrequester/BL_ucip" />
+        <option name="gradleJvm" value="#JAVA_HOME" />
+      </GradleProjectSettings>
+      <GradleProjectSettings>
+        <option name="externalProjectPath" value="$PROJECT_DIR$/inrequester/Robi IN_SDP" />
+        <option name="gradleJvm" value="#JAVA_HOME" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/CGWCommonInterface" />
+            <option value="$PROJECT_DIR$/inrequester/Robi IN_SDP" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+      <GradleProjectSettings>
+        <option name="externalProjectPath" value="$PROJECT_DIR$/inrequester/Robi_IN_SDP_Integrated" />
+        <option name="gradleJvm" value="#JAVA_HOME" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/CGWCommonInterface" />
+            <option value="$PROJECT_DIR$/inrequester/Robi_IN_SDP_Integrated" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+      <GradleProjectSettings>
+        <option name="externalProjectPath" value="$PROJECT_DIR$/jCGW" />
+        <option name="gradleJvm" value="ms-11" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/CGWCommonInterface" />
+            <option value="$PROJECT_DIR$/inrequester/AIR_Dummy_Integrated" />
+            <option value="$PROJECT_DIR$/inrequester/BL_UCIP_Integrated" />
+            <option value="$PROJECT_DIR$/inrequester/Robi_IN_SDP_Integrated" />
+            <option value="$PROJECT_DIR$/jCGW" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+    </option>
+  </component>
+</project>

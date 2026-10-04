@@ -1,0 +1,3 @@
+RateID[RateID column from ratemaster table]>>ServiceID>>SPID>>Password>>ProductID -- Do not DELETE this line!
+Test_RateId>>2000334000000401>>200033>>Robi123>>1000001264
+Test_RateIdRenewal>>2000334000000401>>200033>>Robi123>>1000001264

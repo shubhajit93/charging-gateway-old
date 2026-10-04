@@ -1,0 +1,75 @@
+apply plugin: 'java'
+apply plugin: 'eclipse'
+apply plugin: 'groovy'
+apply plugin: 'application'
+
+archivesBaseName = 'in-requester'
+version = '1.0'
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+// Define the main class for the application
+mainClassName = 'com.ssdtech.robi.Server_Threaded'
+
+sourceSets {
+    main {
+        java {
+            srcDirs = ['src/main']
+        }
+    }
+
+    test {
+        java {
+            srcDirs = ['src/test']
+        }
+    }
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation project(':CGWCommonInterface')
+	// reload4j: drop-in replacement for EOL log4j 1.2.x with known CVEs patched
+	implementation 'ch.qos.reload4j:reload4j:1.2.26'
+	
+	testImplementation 'org.hamcrest:hamcrest-all:1.3'
+	testImplementation 'junit:junit:4.12'
+	testImplementation 'pl.pragmatists:JUnitParams:1.0.4'
+	testImplementation 'org.mockito:mockito-all:1.10.19'
+}
+
+jar {
+    manifest {
+        attributes("Implementation-Title": "ROBI IN Requester",
+                   "Implementation-Version": version)
+    }
+}
+
+task preprocess() {
+    doFirst {
+        println 'Create dist directory and copy all under ConfigurationFiles directory'
+        File srcConfDir = new File('./ConfigurationFiles')
+        File dstConfDir = new File('./src/dist/bin/ConfigurationFiles/')
+        GFileUtils.copyDirectory(srcConfDir, dstConfDir)
+    }
+}
+
+task postprocess() {
+    doFirst {
+        File dstDir = new File('./src/dist/')
+        dstDir.deleteDir()
+    }
+}
+
+task buildin()  {
+    dependsOn preprocess
+    dependsOn build
+    dependsOn postprocess
+
+    preprocess.finalizedBy build
+    postprocess.mustRunAfter build
+
+    println 'Building ROBI IN Requester'
+}

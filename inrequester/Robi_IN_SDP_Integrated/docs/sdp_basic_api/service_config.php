@@ -1,0 +1,244 @@
+<?php
+/* sdp logs database configuration */
+$dbtype_sdp_logs="mysql";
+$Server_sdp_logs="192.168.11.206";
+$UserID_sdp_logs="root";
+$Password_sdp_logs="nopass";
+$Database_sdp_logs="sdp_logs";
+
+/*sdp logs enable configuration 1 for enable and 0 disable*/
+$sdp_logs_enable=1;
+
+$SyncOrderURL = array("0303233039"=>
+									array("reg_url"=>"http://192.168.250.36/Robi_Wap_Portal/2008_robi_sdp_api.php",
+										  "dereg_url"=>"http://192.168.250.36/Robi_Wap_Portal/2008_robi_sdp_api.php"),
+					"0303233038"=>
+									array("reg_url"=>"http://10.101.60.8/vsdp_test/2580_Banowat_6_4_V3/sdp_Subscribe.php",
+										  "dereg_url"=>"http://10.101.60.8/vsdp_test/2580_Banowat_6_4_V3/sdp_Unsubscribe.php"),
+                    "0301160006"=>
+									array("reg_url"=>"http://10.101.60.8/vsdp_test/Robi_Rongo_16505/sdp_Subscribe.php",
+										  "dereg_url"=>"http://10.101.60.8/vsdp_test/Robi_Rongo_16505/sdp_Unsubscribe.php"),
+                    "0303233040"=>
+									array("reg_url"=>"http://10.101.60.8/vsdp_test/2008_MobileDrama_11_V4/sdp_Subscribe.php",
+										  "dereg_url"=>"http://10.101.60.8/vsdp_test/2008_MobileDrama_11_V4/sdp_Unsubscribe.php"),
+                    "0303233075"=>
+									array("reg_url"=>"http://10.101.60.8/vsdp_test/2008_MobileDrama_11_V7_Campaign/sdp_Subscribe.php",
+										  "dereg_url"=>"http://10.101.60.8/vsdp_test/2008_MobileDrama_11_V7_Campaign/sdp_Unsubscribe.php"),
+                    "0303233034"=>
+									array("reg_url"=>"http://192.168.250.36/sdp_api.php",
+										  "dereg_url"=>"http://192.168.250.36/sdp_api.php"),
+					"0303233041"=>
+									array("reg_url"=>"http://192.168.250.36/Folkmela_ROBI_API/robi_sdp_api.php",
+										  "dereg_url"=>"http://192.168.250.36/Folkmela_ROBI_API/robi_sdp_api.php"),
+					"0303233044"=>
+									array("reg_url"=>"http://192.168.250.36/Folkmela_ROBI_API/robi_sdp_api.php",
+										  "dereg_url"=>"http://192.168.250.36/Folkmela_ROBI_API/robi_sdp_api.php"),
+					"0303233044"=>
+									array("reg_url"=>"http://192.168.250.36/Folkmela_ROBI_API/robi_sdp_api.php",
+										  "dereg_url"=>"http://192.168.250.36/Folkmela_ROBI_API/robi_sdp_api.php"),
+					"0303233043"=>
+									array("reg_url"=>"http://192.168.250.36/DK_ROBI_API/robi_sdp_api.php",
+										  "dereg_url"=>"http://192.168.250.36/DK_ROBI_API/robi_sdp_api.php"),
+					"0303233042"=>
+									array("reg_url"=>"http://192.168.250.36/DK_ROBI_API/robi_sdp_api.php",
+										  "dereg_url"=>"http://192.168.250.36/DK_ROBI_API/robi_sdp_api.php"),
+					"0000014000000301"=>
+									array("reg_url"=>"http://192.168.250.36/DK_ROBI_API/robi_sdp_apifor30day.php",
+										  "dereg_url"=>"http://192.168.250.36/DK_ROBI_API/robi_sdp_apifor30day.php"),
+					"0303233074"=>
+									array("reg_url"=>"http://192.168.250.36/DK_ROBI_API/robi_sdp_apifor30day.php",
+										  "dereg_url"=>"http://192.168.250.36/DK_ROBI_API/robi_sdp_apifor30day.php"),
+                    "0303233026"=>
+									array("reg_url"=>"http://10.101.60.8/vsdp_test/2828_VChatB_v1/sdp_Subscribe.php",
+										  "dereg_url"=>"http://10.101.60.8/vsdp_test/2828_VChatB_v1/sdp_Unsubscribe.php"),
+                    "0303233052"=>
+									array("reg_url"=>"http://10.101.60.8/vsdp_test/Addabaji_ROBI_API/sdp_Subscribe.php",
+										  "dereg_url"=>"http://10.101.60.8/vsdp_test/Addabaji_ROBI_API/sdp_Unsubscribe.php"),
+                    "0303233053"=>
+									array("reg_url"=>"http://10.101.60.8/vsdp_test/Addabaji_ROBI_API/sdp_Subscribe.php",
+										  "dereg_url"=>"http://10.101.60.8/vsdp_test/Addabaji_ROBI_API/sdp_Unsubscribe.php"),
+                    "1234200033"=>
+									array("reg_url"=>"http://192.168.250.36/Folkmela_ROBI_API/robi_sdp_api_test.php",
+										  "dereg_url"=>"http://192.168.250.36/Folkmela_ROBI_API/robi_sdp_api_test.php"),
+                    "0303233027"=>
+									array("reg_url"=>"http://10.101.60.8/vsdp_test/2828_VChatB_v1/sdp_Subscribe.php",
+										  "dereg_url"=>"http://10.101.60.8/vsdp_test/2828_VChatB_v1/sdp_Unsubscribe.php"),
+                    "0303233036"=>
+									array("reg_url"=>"http://10.101.60.8/vsdp_test/3690_aynabazi_v1/sdp_Subscribe.php",
+										  "dereg_url"=>"http://10.101.60.8/vsdp_test/3690_aynabazi_v1/sdp_Unsubscribe.php"),
+                    "0303413312"=>
+									array("reg_url"=>"http://10.101.60.8/vsdp_test/6969_etunes/sdp_Subscribe.php",
+										  "dereg_url"=>"http://10.101.60.8/vsdp_test/6969_etunes/sdp_Unsubscribe.php"),
+                    "0304413027"=>
+									array("reg_url"=>"http://10.101.60.8/vsdp_test/2221_prothom_alo/sdp_Subscribe.php",
+										  "dereg_url"=>"http://10.101.60.8/vsdp_test/2221_prothom_alo/sdp_Unsubscribe.php"),
+	                "0302400073"=>
+									array("reg_url"=>"http://10.101.60.8/vsdp_test/21257_Tips_and_Tricks/sdp_Subscribe.php",
+										  "dereg_url"=>"http://10.101.60.8/vsdp_test/21257_Tips_and_Tricks/sdp_Unsubscribe.php"),
+	                "0302400074"=>
+									array("reg_url"=>"http://10.101.60.8/vsdp_test/8534_Kid_Zone/sdp_Subscribe.php",
+										  "dereg_url"=>"http://10.101.60.8/vsdp_test/8534_Kid_Zone/sdp_Unsubscribe.php"),
+	                "0302400076"=>
+									array("reg_url"=>"http://10.101.60.8/vsdp_test/21257_Tips_and_Tricks_v2/sdp_Subscribe.php",
+										  "dereg_url"=>"http://10.101.60.8/vsdp_test/21257_Tips_and_Tricks_v2/sdp_Unsubscribe.php"),
+                    "0302400075"=>
+									array("reg_url"=>"http://10.101.60.8/vsdp_test/8534_Kid_Zone_v2/sdp_Subscribe.php",
+										  "dereg_url"=>"http://10.101.60.8/vsdp_test/8534_Kid_Zone_v2/sdp_Unsubscribe.php"),
+	                "0303413144"=>
+									array("reg_url"=>"http://10.101.60.8/vsdp_test/Robi_5959_20160526/sdp_Subscribe.php",
+										  "dereg_url"=>"http://10.101.60.8/vsdp_test/Robi_5959_20160526/sdp_Unsubscribe.php"),
+	                "0303413146"=>
+									array("reg_url"=>"http://10.101.60.8/vsdp_test/22000_Robi_v3/sdp_Subscribe.php",
+										  "dereg_url"=>"http://10.101.60.8/vsdp_test/22000_Robi_v3/sdp_Unsubscribe.php"),
+                    "0307400011"=>
+									array("reg_url"=>"http://10.101.60.8/vsdp_test/16443_Bongo_Music/sdp_Subscribe.php",
+										  "dereg_url"=>"http://10.101.60.8/vsdp_test/16443_Bongo_Music/sdp_Unsubscribe.php"),
+                    "2345"=>
+									array("reg_url"=>"http://10.101.60.8/vsdp_test/3443_VChatB_v5/sdp_Subscribe.php",
+										  "dereg_url"=>"http://10.101.60.8/vsdp_test/3443_VChatB_v5/sdp_Unsubscribe.php"),
+                    "0303233076"=>
+									array("reg_url"=>"http://10.101.60.8/vsdp_test/Addabaji_APP_API/sdp_Subscribe.php",
+										  "dereg_url"=>"http://10.101.60.8/vsdp_test/Addabaji_APP_API/sdp_Unsubscribe.php"),
+                    "0303233077"=>
+									array("reg_url"=>"http://10.101.60.8/vsdp_test/Addabaji_APP_API/sdp_Subscribe.php",
+										  "dereg_url"=>"http://10.101.60.8/vsdp_test/Addabaji_APP_API/sdp_Unsubscribe.php"),
+
+					"0303233012"=>				
+									array("reg_url"=>"http://192.168.11.206/sdp/soapReturn.php",
+										  "dereg_url"=>"http://192.168.11.206/sdp/soapReturn.php"),
+					"0303233013"=>
+					                		array("reg_url"=>"http://192.168.11.206/sdp/soapReturn.php",		
+										  "dereg_url"=>"http://192.168.11.206/sdp/soapReturn.php"),
+					"0303233001"=>
+									array("reg_url"=>"http://192.168.11.206/sdp/soapReturn.php",		
+										  "dereg_url"=>"http://192.168.11.206/sdp/soapReturn.php"),
+					"0303233002"=>
+									array("reg_url"=>"http://192.168.11.206/sdp/soapReturn.php",		
+										  "dereg_url"=>"http://192.168.11.206/sdp/soapReturn.php"),
+					"0303233003"=>
+									array("reg_url"=>"http://192.168.11.206/sdp/soapReturn.php",		
+										  "dereg_url"=>"http://192.168.11.206/sdp/soapReturn.php"),
+					"0303233004"=>
+									array("reg_url"=>"http://192.168.11.206/sdp/soapReturn.php",		
+										  "dereg_url"=>"http://192.168.11.206/sdp/soapReturn.php"),
+					"0303233005"=>
+									array("reg_url"=>"http://192.168.11.206/sdp/soapReturn.php",		
+										  "dereg_url"=>"http://192.168.11.206/sdp/soapReturn.php"),
+					"0303233006"=>
+									array("reg_url"=>"http://192.168.11.206/sdp/soapReturn.php",
+										  "dereg_url"=>"http://192.168.11.206/sdp/soapReturn.php"),
+					"0303233007"=>
+									array("reg_url"=>"http://192.168.11.206/sdp/soapReturn.php",			
+										  "dereg_url"=>"http://192.168.11.206/sdp/soapReturn.php"),
+					"0303233009"=>
+									array("reg_url"=>"http://192.168.11.206/sdp/soapReturn.php",		
+										  "dereg_url"=>"http://192.168.11.206/sdp/soapReturn.php"),
+					"0303233010"=>
+									array("reg_url"=>"http://192.168.11.206/sdp/soapReturn.php",			
+										  "dereg_url"=>"http://192.168.11.206/sdp/soapReturn.php"),
+					"0303233014"=>
+									array("reg_url"=>"http://192.168.11.206/sdp/soapReturn.php",	
+	                                      					"dereg_url"=>"http://192.168.11.206/sdp/soapReturn.php"),
+					"0303233015"=>
+									array("reg_url"=>"http://192.168.11.206/sdp/soapReturn.php",
+										  "dereg_url"=>"http://192.168.11.206/sdp/soapReturn.php"),
+					"0303233017"=>
+									array("reg_url"=>"http://192.168.11.206/sdp/soapReturn.php",	
+	                                      					"dereg_url"=>"http://192.168.11.206/sdp/soapReturn.php"),
+					"0303233018"=>
+									array("reg_url"=>"http://192.168.11.206/sdp/soapReturn.php",		
+										  "dereg_url"=>"http://192.168.11.206/sdp/soapReturn.php"),
+	                               "0303233046"=>
+									array("reg_url"=>"http://192.168.11.206/sdp/soapReturn.php",	
+										  "dereg_url"=>"http://192.168.11.206/sdp/soapReturn.php"),
+					"0303233047"=>
+									array("reg_url"=>"http://192.168.11.206/sdp/soapReturn.php",		
+										  "dereg_url"=>"http://192.168.11.206/sdp/soapReturn.php"),
+					"0303233056"=>
+									array("reg_url"=>"http://10.101.60.8/vsdp_test/500_Sports/sdp_Subscribe.php",
+										  "dereg_url"=>"http://10.101.60.8/vsdp_test/500_Sports/sdp_Unsubscribe.php"),
+					"0303233057"=>
+									array("reg_url"=>"http://10.101.60.8/vsdp_test/501_News_Service/sdp_Subscribe.php",
+										  "dereg_url"=>"http://10.101.60.8/vsdp_test/501_News_Service/sdp_Unsubscribe.php"),
+					"0303233058"=>
+									array("reg_url"=>"http://10.101.60.8/vsdp_test/502_Religious/sdp_Subscribe.php",
+										  "dereg_url"=>"http://10.101.60.8/vsdp_test/502_Religious/sdp_Unsubscribe.php"),
+					"0303233059"=>
+									array("reg_url"=>"http://10.101.60.8/vsdp_test/503_Jokes/sdp_Subscribe.php",
+										  "dereg_url"=>"http://10.101.60.8/vsdp_test/503_Jokes/sdp_Unsubscribe.php"),
+					"0303233060"=>
+									array("reg_url"=>"http://10.101.60.8/vsdp_test/505_MindGames/sdp_Subscribe.php",
+										  "dereg_url"=>"http://10.101.60.8/vsdp_test/505_MindGames/sdp_Unsubscribe.php"),
+					"0303233061"=>
+									array("reg_url"=>"http://10.101.60.8/vsdp_test/506_Horoscope/sdp_Subscribe.php",
+										  "dereg_url"=>"http://10.101.60.8/vsdp_test/506_Horoscope/sdp_Unsubscribe.php"),
+					"0303233062"=>
+									array("reg_url"=>"http://10.101.60.8/vsdp_test/510_Finance/sdp_Subscribe.php",
+										  "dereg_url"=>"http://10.101.60.8/vsdp_test/510_Finance/sdp_Unsubscribe.php"),
+					"0303233063"=>
+									array("reg_url"=>"http://10.101.60.8/vsdp_test/515_Music/sdp_Subscribe.php",
+										  "dereg_url"=>"http://10.101.60.8/vsdp_test/515_Music/sdp_Unsubscribe.php"),
+					"0303233064"=>
+									array("reg_url"=>"http://10.101.60.8/vsdp_test/520_Drama/sdp_Subscribe.php",
+										  "dereg_url"=>"http://10.101.60.8/vsdp_test/520_Drama/sdp_Unsubscribe.php"),
+					"0303233065"=>
+									array("reg_url"=>"http://10.101.60.8/vsdp_test/525_LoveGuru/sdp_Subscribe.php",
+										  "dereg_url"=>"http://10.101.60.8/vsdp_test/525_LoveGuru/sdp_Unsubscribe.php"),
+					"0303233066"=>
+									array("reg_url"=>"http://10.101.60.8/vsdp_test/530_GhorKonna/sdp_Subscribe.php",
+										  "dereg_url"=>"http://10.101.60.8/vsdp_test/530_GhorKonna/sdp_Unsubscribe.php"),
+					"0303233067"=>
+									array("reg_url"=>"http://10.101.60.8/vsdp_test/535_Bani/sdp_Subscribe.php",
+										  "dereg_url"=>"http://10.101.60.8/vsdp_test/535_Bani/sdp_Unsubscribe.php"),
+					"0303233068"=>
+									array("reg_url"=>"http://10.101.60.8/vsdp_test/540_HealthTips/sdp_Subscribe.php",
+										  "dereg_url"=>"http://10.101.60.8/vsdp_test/540_HealthTips/sdp_Unsubscribe.php"),
+					"0303233069"=>
+									array("reg_url"=>"http://10.101.60.8/vsdp_test/545_Career/sdp_Subscribe.php",
+										  "dereg_url"=>"http://10.101.60.8/vsdp_test/545_Career/sdp_Unsubscribe.php"),
+					"0303233070"=>
+									array("reg_url"=>"http://10.101.60.8/vsdp_test/555_MainHub/sdp_Subscribe.php",
+										  "dereg_url"=>"http://10.101.60.8/vsdp_test/555_MainHub/sdp_Unsubscribe.php"),
+					"0303233071"=>
+									array("reg_url"=>"http://10.101.60.8/vsdp_test/6999_Travel/sdp_Subscribe.php",
+										  "dereg_url"=>"http://10.101.60.8/vsdp_test/6999_Travel/sdp_Unsubscribe.php"),
+					"0303233072"=>
+									array("reg_url"=>"http://10.101.60.8/vsdp_test/707_Song/sdp_Subscribe.php",
+										  "dereg_url"=>"http://10.101.60.8/vsdp_test/707_Song/sdp_Unsubscribe.php"),
+					"0303233073"=>
+									array("reg_url"=>"http://10.101.60.8/vsdp_test/7070_Song/sdp_Subscribe.php",
+										  "dereg_url"=>"http://10.101.60.8/vsdp_test/7070_Song/sdp_Unsubscribe.php"),
+					"0303233078"=>
+									array("reg_url"=>"http://192.168.250.36/Robi_Wap_Portal/2008_robi_sdp_api.php",			
+										  "dereg_url"=>"http://192.168.250.36/Robi_Wap_Portal/2008_robi_sdp_api.php"),
+					"0303233080"=>
+									array("reg_url"=>"http://10.101.60.8/vsdp_test/3690_Islamic_Portal/sdp_Subscribe.php",
+										"dereg_url"=>"http://10.101.60.8/vsdp_test/3690_Islamic_Portal/sdp_Unsubscribe.php"),
+					"0303233085"=>
+									array("reg_url"=>"http://10.101.60.8/vsdp_test/3690_Islamic_Portal/sdp_Subscribe.php",
+										"dereg_url"=>"http://10.101.60.8/vsdp_test/3690_Islamic_Portal/sdp_Unsubscribe.php"),
+					"0303233079"=>
+									array("reg_url"=>"http://192.168.250.36/Robi_SMS_Chat/robi_sms_chat_sdp.php",			
+										  "dereg_url"=>"http://192.168.250.36/Robi_SMS_Chat/robi_sms_chat_sdp.php"),
+
+					"0303233081"=>			array("reg_url"=>"http://192.168.250.36/sms/GP_SMS_subscription/sdp_reg_dereg.php",			
+										"dereg_url"=>"http://192.168.250.36/sms/GP_SMS_subscription/sdp_reg_dereg.php"),
+					
+					"0303233082"=>			array("reg_url"=>"http://192.168.250.36/sms/GP_SMS_subscription/sdp_reg_dereg.php",			
+										"dereg_url"=>"http://192.168.250.36/sms/GP_SMS_subscription/sdp_reg_dereg.php"),
+
+					"0303233083"=>			array("reg_url"=>"http://192.168.250.36/sms/GP_SMS_subscription/sdp_reg_dereg.php",			
+									 	"dereg_url"=>"http://192.168.250.36/sms/GP_SMS_subscription/sdp_reg_dereg.php"),
+
+					"0303233084"=>			array("reg_url"=>"http://192.168.250.36/sms/GP_SMS_subscription/sdp_reg_dereg.php",			
+										"dereg_url"=>"http://192.168.250.36/sms/GP_SMS_subscription/sdp_reg_dereg.php"),
+
+ 			        "0303233055"=>         array("reg_url"=>"http://10.101.60.8/vsdp_test/3443_OBD/sdp_Subscribe.php",
+					                         "dereg_url"=>"http://10.101.60.8/vsdp_test/3443_OBD/sdp_Unsubscribe.php")
+						  
+
+					 );
+
+ 
+
+?>

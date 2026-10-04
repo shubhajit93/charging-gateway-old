@@ -1,0 +1,26 @@
+apply plugin: 'java'
+apply plugin: 'eclipse'
+
+archivesBaseName = 'cgw-common'
+version = '1.0'
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+sourceSets {
+    main {
+        java {
+            srcDirs = ['src']
+        }
+    }
+}
+
+repositories {}
+
+dependencies {}
+
+jar {
+    manifest {
+        attributes("Implementation-Title": "CGW Common Interface",
+                   "Implementation-Version": version)
+    }
+}

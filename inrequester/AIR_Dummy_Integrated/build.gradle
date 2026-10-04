@@ -1,0 +1,32 @@
+apply plugin: 'java'
+apply plugin: 'eclipse'
+
+archivesBaseName = 'in-requester-dummy'
+version = '1.0'
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+sourceSets {
+    main {
+        java {
+            srcDirs = ['src']
+        }
+    }
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation project(':CGWCommonInterface')
+	// reload4j: drop-in replacement for EOL log4j 1.2.x with known CVEs patched
+	implementation 'ch.qos.reload4j:reload4j:1.2.26'
+}
+
+jar {
+    manifest {
+        attributes("Implementation-Title": "Dummy IN Requester",
+                   "Implementation-Version": version)
+    }
+}
